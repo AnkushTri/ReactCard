@@ -332,32 +332,91 @@ const Card = () => {
       }
     }
   ]
-  const [batch,setBatch]= useState([])
+  const [batch,setBatch]= useState([{}])
 
-    const { id } = useParams()
-    if(id===1){
-      setBatch(Batch1)
+    const { id } = useParams();
+    const getBatches=()=>{
+      if(id==1){
+        setBatch(Batch1);
+      }else if(id ==2){
+        setBatch(Batch2)
+      }else if(id ==3){
+        setBatch(Batch3)
+    }else{
+      setBatch([{}])
     }
-    if(id===2){
-      setBatch(Batch2)
-    }
-    if(id===3){
-      setBatch(Batch3)
-    }
+  }
+     
+    useEffect(()=>{
+      getBatches()
+    },[id])
+
+    console.log(batch[0].name)
 
 
     return (
-      batch.map((elem)=>{
-        <Wrapper key={elem.id}>
-          < Box >
-            <div>{elem.name}</div>
+    <>
+        <Wrapper>
+          <div className='section'>
+            <h1>GET Batch{id} Details</h1>
+          </div>
+          <Box >
+            <Table cellPadding={10}>
+              <Thead >
+                <Th>User Name</Th>
+                <Th>Email</Th>
+                <Th>Phone</Th>
+                <Th>Webiste</Th>
+              </Thead>
+              {batch.map((currUser) => {
+                return <Tbody key={currUser._id} >
+                  <Td>{currUser.name}</Td>
+                  <Td>{currUser.email}</Td>
+                  <Td>{currUser.phone}</Td>
+                  <Td>{currUser.website}</Td>
+                </Tbody>
+              })}
+            </Table>
+
           </Box>
         </Wrapper>
-      })
+    </>
         
     )
 }
+export default Card;
 
+const Td=styled.td`
+border:2px solid black;
+`
+const Th=styled.th`
+border:2px solid black;
+`
+
+const Table=styled.table`
+text-align:center;
+border:2px solid red;
+max-width:80%;
+margin:0 auto;
+border-collapse:collapse;
+
+
+
+`
+const Thead=styled.thead`
+border:2px solid green;
+`
+const Tbody=styled.tbody`
+margin:0;
+padding:0;
+&:hover{
+  background-color:grey;
+  color:white;
+  cursor:pointer;
+  
+}
+
+`
 
 const Wrapper = styled.div`
   margin-top:.3rem;
@@ -367,76 +426,12 @@ const Wrapper = styled.div`
 `
 const Box = styled.div`
 display:flex;
-overflow:hidden;
-
+flex-wrap:wrap;
+  @media screen and (max-width: 350px) {
+    font-size: 18px;
+    padding: 20px;
+    width:50%;
+    height:150%;
+    color:red;
+  }
 `
-const Image = styled.div`
-width:50%;
-displey:flex;
-flex-direction:column;
-`
-const Detail = styled.div`
-`
-const Img = styled.img`
-height:38vh;
-width:80%;
-margin:.3rem 0;
-`
-const Title = styled.div`
-  font-size:1.5rem;
-  margin:0.5rem 2rem;
-  text-align:center;
-`
-const ImgWrapper = styled.div`
-  text-align:center
-`
-
-export default Card
-
-// import React from 'react'
-// import styled from 'styled-components'
-
-// const Card = ({ userData }) => {
-//     console.log(userData)
-
-//     return (
-//         <Wrapper>
-//             < Box >
-//             hii
-//                 <ImgWrapper><Img src={userData.url} /></ImgWrapper>
-//                 {/* <div><Img src={elem.thumbnailUrl}/></div> */}
-//                 <Title> {userData.title}</Title>
-//             </Box>
-//         </Wrapper>
-//     )
-// }
-
-// const Wrapper = styled.div`
-//   display:flex;
-//   flex-wrap:wrap;
-//   gap:4.5rem;
-//   border-radius:2rem;
-  
-// `
-// const Box = styled.div`
-// width:500px;
-// height:400px;
-// border:2px solid grey;
-// `
-// const Img = styled.img`
-// width:80%;
-// height:15rem;
-// margin-top:2rem;
-
-// `
-// const Title = styled.div`
-//   font-size:1.5rem;
-//   margin:0.5rem 2rem;
-//   // text-align:center;
-// `
-// const ImgWrapper = styled.div`
-//   text-align:center
-// `
-
-
-// export default Card

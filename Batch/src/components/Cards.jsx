@@ -25,16 +25,11 @@ const Cards = () => {
   },
   ]
   const [batches,setBatches]=useState(Batches)
-
- 
-
       const handleClick = (id) => {
         console.log(id)
         const link = `/${id}`;
         navigate(link)
-
       }
-
 
   return (
     <>
@@ -69,6 +64,7 @@ aling-items:center;
 justify-content:center;
 width:350px;
 height:400px;
+margin:0 auto;
 border:2px solid grey;
 `
 const Img = styled.img`

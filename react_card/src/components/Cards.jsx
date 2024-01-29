@@ -9,6 +9,9 @@ const Cards = () => {
 
   const navigate=useNavigate();
 const [userData,setUserData]=useState([{},])
+
+const[hover,setHover]=useState(false)
+
   const [url, setUrl] = useState(`https://jsonplaceholder.typicode.com/photos`)
 const getImage=async()=>{
     try{
@@ -39,10 +42,15 @@ useEffect(()=>{
     <Wrapper>
     {userData.map((elem)=>{
       return (
-        < Box key={elem.id}>
-          <ImgWrapper><Img src={elem.url} /></ImgWrapper>
+        < Box key={elem.id}
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}>
+          <ImgWrapper><Img src={elem.url}  /></ImgWrapper>
           {/* <div><Img src={elem.thumbnailUrl}/></div> */}
-          <Title>{elem.title}</Title>
+          {hover && <Title>{elem.title}</Title>
+          }
+          
+          
           <Button onClick={()=>handleClick(elem.id)}>more</Button>
         </Box>
       )
