@@ -1,18 +1,13 @@
-// import { useState } from 'react'
-import Cards from './components/Cards'
-import Card from './components/Card'
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import { BrowserRouter,Routes,Route} from 'react-router-dom'
+import Dis from "./components/CardWithProduct"
 
 const App =()=> {
 
-
   return (
     <>
-     {/* <Cards/> */}
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Cards/>} />
-        <Route path="/:id" element={<Card/>} />
+        <Route path="/" element={<Dis/>}/>
       </Routes>
       </BrowserRouter>
     </>
