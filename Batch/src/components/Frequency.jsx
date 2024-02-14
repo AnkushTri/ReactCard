@@ -18,7 +18,7 @@ const Frequency = () => {
           {
             title: "How does selling on Grocify.com work?",
             description:
-              "Selling on Grocify.com is a simple process. Create an account with your GSTIN, valid mobile number, email ID, bank account, and address details. List your products on the platform and manage orders. You can choose to pack and ship the products yourself or utilise Grocify's Fulfilment by Grocify (FBF) service for hassle-free logistics management. Payments are disbursed within 7* days from the date of product dispatch.",
+              "Selling on Grocify.com is a simple process. Create an account with your GSTIN, valid mobile number, email ID, bank account, and address details. List your products on the platform and manage orders. You can choose to pack and ship the products yourself or utilise Grocify's Fulfilment by Grocify (GF) service for hassle-free logistics management. Payments are disbursed within 7* days from the date of product dispatch.",
           },
           {
             title:
@@ -60,22 +60,22 @@ const Frequency = () => {
           {
             title: "Who decides the price of my products?",
             description:
-              "As a seller on Flipkart.com, you have full control over the pricing of your products. You can set the price based on your business strategy and the market dynamics. The seller dashboard also provides analysis and recommendations to help you determine the optimal price for your products.",
+              "As a seller on Grocify.com, you have full control over the pricing of your products. You can set the price based on your business strategy and the market dynamics. The seller dashboard also provides analysis and recommendations to help you determine the optimal price for your products.",
           },
           {
-            title: "What are the charges for selling on Flipkart.com?",
+            title: "What are the charges for selling on Grocify.com?",
             description:
-              "Flipkart.com does not charge any fees for listing your products on its platform. However, upon a successful sale, there is a small marketplace fee applicable as a percentage of the selling price. You can refer to the Flipkart Seller Fee details for more information.",
+              "Grocify.com does not charge any fees for listing your products on its platform. However, upon a successful sale, there is a small marketplace fee applicable as a percentage of the selling price. You can refer to the Grocify Seller Fee details for more information.",
           },
           {
-            title: "Will I get charged for listing products on Flipkart.com?",
+            title: "Will I get charged for listing products on Grocify.com?",
             description:
-              "No, there are no charges for listing your products on Flipkart.com. Listing your products is free of cost.",
+              "No, there are no charges for listing your products on Grocify.com. Listing your products is free of cost.",
           },
           {
             title: "How and when do I get paid?",
             description:
-              "Once your product is picked up and successfully delivered to the customer, you will receive payment within as fast as 7* days. Payments are securely and regularly transferred directly to your registered bank account after deducting the relevant Flipkart fees.",
+              "Once your product is picked up and successfully delivered to the customer, you will receive payment within as fast as 7* days. Payments are securely and regularly transferred directly to your registered bank account after deducting the relevant Grocify fees.",
           },
         ],
       },
@@ -84,25 +84,25 @@ const Frequency = () => {
         id: "ManagingAccount",
         sectiones: [
           {
-            title: "How do I list my products on Flipkart.com?",
+            title: "How do I list my products on Grocify.com?",
             description:
-              "To list your products on Flipkart.com, you need to follow these steps: Obtain brand approval from Flipkart's Brand Regulation Team. Choose the appropriate category for your product. Provide detailed product information such as size, model, colour, brand, etc. If you need any assistance or guidance, you can always reach out to the Flipkart Seller Support Team.",
+              "To list your products on Grocify.com, you need to follow these steps: Obtain brand approval from Grocify's Brand Regulation Team. Choose the appropriate category for your product. Provide detailed product information such as size, model, colour, brand, etc. If you need any assistance or guidance, you can always reach out to the Grocify Seller Support Team.",
           },
           {
-            title: "How do I manage my orders on Flipkart.com?",
+            title: "How do I manage my orders on Grocify.com?",
             description:
-              "Managing orders on Flipkart.com is convenient with our seller dashboard. You have three options: Pack and ship the orders yourself using your preferred packaging, marking them as 'ready to dispatch' within the given timeline. Our logistics partner will pick up the orders and deliver them to customers. Use Fulfilment by Flipkart (FBF) service, where Flipkart handles the packaging and shipping for you.",
+              "Managing orders on Grocify.com is convenient with our seller dashboard. You have three options: Pack and ship the orders yourself using your preferred packaging, marking them as 'ready to dispatch' within the given timeline. Our logistics partner will pick up the orders and deliver them to customers. Use Fulfilment by Grocify (GF) service, where Grocify handles the packaging and shipping for you.",
           },
           {
-            title: "What do I need to list my products on Flipkart.com?",
+            title: "What do I need to list my products on Grocify.com?",
             description:
-              "To list products on Flipkart.com, you need to provide product details, set competitive prices, include high-quality images, manage your inventory, and provide accurate shipping information.",
+              "To list products on Grocify.com, you need to provide product details, set competitive prices, include high-quality images, manage your inventory, and provide accurate shipping information.",
           },
           {
             title:
               "Can I get help with catalogue development (product images, descriptions, etc.)?",
             description:
-              "Yes, Flipkart offers dedicated catalogue services to help sellers enhance their product images and descriptions. You can opt for Premium Catalog Services to ensure maximum visibility and customer trust. Additionally, the IGNITE program provides image editing and product cataloguing services at an affordable price, giving your business a kickstart.",
+              "Yes, Grocify offers dedicated catalogue services to help sellers enhance their product images and descriptions. You can opt for Premium Catalog Services to ensure maximum visibility and customer trust. Additionally, the IGNITE program provides image editing and product cataloguing services at an affordable price, giving your business a kickstart.",
           },
         ],
       },
@@ -113,7 +113,7 @@ const Frequency = () => {
           {
             title: "Do you offer protection against fraud?",
             description:
-              "Yes, Flipkart.com provides protection against fraud through the Seller Protection Fund (SPF) program. Sellers are eligible for monetary compensation for orders where the returned products have been damaged or missing.",
+              "Yes, Grocify.com provides protection against fraud through the Seller Protection Fund (SPF) program. Sellers are eligible for monetary compensation for orders where the returned products have been damaged or missing.",
           },
           {
             title:
@@ -122,9 +122,9 @@ const Frequency = () => {
               "Yes, customers can leave feedback and ratings for the products they purchase. Customer feedback is important as it helps build trust and credibility for the seller. Positive feedback and high ratings enhance the seller's reputation, attracting more customers and increasing sales. It also provides valuable insights for sellers to improve their products and services.",
           },
           {
-            title: "Do I need GST to sell on Flipkart?",
+            title: "Do I need GST to sell on Grocify?",
             description:
-              "Yes, sellers are required to have GST registration to sell products on Flipkart. For most categories, a regular GSTIN is mandatory. However, for the 'Only Books' category, PAN (Permanent Account Number) is mandatory.",
+              "Yes, sellers are required to have GST registration to sell products on Grocify. For most categories, a regular GSTIN is mandatory. However, for the 'Only Books' category, PAN (Permanent Account Number) is mandatory.",
           },
           {
             title:
@@ -135,32 +135,33 @@ const Frequency = () => {
         ],
       },
       {
-        id: "FBF",
-        title: "Fulfillment by Flipkart (FBF)",
+        id: "GF",
+        title: "Fulfillment by Grocify (GF)",
         sectiones: [
           {
-            title: "What is Fulfilment by Flipkart (FBF)?",
+            title: "What is Fulfilment by Grocify (GF)?",
             description:
-              "Fulfilment by Flipkart (FBF) is an exclusive program where Flipkart stores, packs, and delivers your products to customers. It also handles customer service and returns. It offers a hassle-free way to manage your inventory and ensure timely delivery and customer satisfaction.",
+              "Fulfilment by Grocify (GF) is an exclusive program where Grocify stores, packs, and delivers your products to customers. It also handles customer service and returns. It offers a hassle-free way to manage your inventory and ensure timely delivery and customer satisfaction.",
           },
           {
-            title: "How does FBF work?",
+            title: "How does GF work?",
             description:
-              "Once you register for FBF, you send your products to Flipkart's Fulfilment Centers. Flipkart stores and manages your inventory. When an order is placed, Flipkart packs and ships the products to the customer. Flipkart also handles returns and provides quality assurance.",
+              "Once you register for GF, you send your products to Grocify's Fulfilment Centers. Grocify stores and manages your inventory. When an order is placed, Grocify packs and ships the products to the customer. Grocify also handles returns and provides quality assurance.",
           },
           {
-            title: "Do I need a minimum number of items to avail FBF?",
+            title: "Do I need a minimum number of items to avail GF?",
             description:
-              "No, there is no minimum requirement. You can avail FBF for any number of items, ranging from one to multiple items, across various categories.",
+              "No, there is no minimum requirement. You can avail GF for any number of items, ranging from one to multiple items, across various categories.",
           },
           {
-            title: "What are the benefits of FBF?",
+            title: "What are the benefits of GF?",
             description:
-              "By using FBF, you can enjoy the following benefits: Quality assurance and trusted customer experience. No need to invest in storage infrastructure. No impact on seller service metrics. Faster procurement and delivery for higher customer satisfaction.",
+              "By using GF, you can enjoy the following benefits: Quality assurance and trusted customer experience. No need to invest in storage infrastructure. No impact on seller service metrics. Faster procurement and delivery for higher customer satisfaction.",
           },
         ],
       },
     ];
+   const [selectedSection, setSelectedSection] = useState(null);
      const [toggleState, setToggleState] = useState({});
 
      const handleToggle = (mainSectionId, subSectionTitle) => {
@@ -174,6 +175,7 @@ const Frequency = () => {
      };
 
     const scrollToSection = (id) => {
+      setSelectedSection(id);
       const section = document.getElementById(id);
       window.scrollTo({
         top: section.offsetTop,
@@ -190,6 +192,10 @@ const Frequency = () => {
               <a
                 href={`#${section.id}`}
                 onClick={() => scrollToSection(section.id)}
+                style={{
+                  color:
+                    selectedSection === section.id ? "green" : "black",
+                }}
               >
                 {section.title}
               </a>
@@ -199,7 +205,11 @@ const Frequency = () => {
       </div>
       <div className="general">
         {sections.map((mainSection) => (
-          <div key={mainSection.id} id={mainSection.id}>
+          <div
+            key={mainSection.id}
+            id={mainSection.id}
+            className="main-section"
+          >
             <h2>{mainSection.title}</h2>
             {mainSection.sectiones.map((subSection) => (
               <section key={subSection.title} id={subSection.title}>
@@ -232,6 +242,8 @@ const Frequency = () => {
 const Wrapper = styled.div`
   display: flex;
   overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+
   .nav {
     width: 25%;
     display: flex;
@@ -262,14 +274,18 @@ const Wrapper = styled.div`
   }
 
   /* Section styling */
-  .general{
-width: 75%;
-background: #b4f7b4;
-padding: 0 2rem;
-  } 
+  .general {
+    width: 75%;
+    background: #ecfeec;
+    padding: 1rem 2rem 3rem 2rem;
+  }
+  .main-section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
   section {
     width: 95%;
-    padding:0 5rem 0 1rem;
+    padding: 1rem 5rem 0 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
   .title {
     display: flex;
@@ -277,7 +293,10 @@ padding: 0 2rem;
     align-items: center;
     font-size: 1rem;
   }
-  button{
+  p {
+    margin-top: 0rem;
+  }
+  button {
     border: none;
     background: transparent;
     cursor: pointer;
