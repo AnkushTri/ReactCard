@@ -12,6 +12,7 @@ dist
 dist-ssr
 api
 *.local
+Location.jsx
 
 # Editor directories and files
 .vscode/*

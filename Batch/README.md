@@ -1,8 +1,11 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+//14-02-2024 three components Shiping.jsx,ReturnPolicy.jsx,and Frequency.jsx for f&Q
+//routes in App.jsx is
+        <!-- <Route path="/return" element={<ReturnPolicy/>}/>
+        <Route path="/shop" element={<ShippingPolicy/>}/>
+        <Route path="/faq" element={<Frequency/>}/> -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+//for styling used styled componets
+//find npm style componets
+//react icon for icon used in this 

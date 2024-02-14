@@ -7,10 +7,34 @@ import Star from './Star';
 import FormatPrice from './FormatPrice';
 
 const Dis = () => {
-
-    const [data,setData]=useState([{}])
+  const productData=[
+    {
+        imageUrl:"./images/batchs.jpg",
+        title:"The Target",
+        description:"Sector 22C, Chandigarh (Electronics)",
+        delivery:"Delivery by Sun, 12 Feb",
+        price:"1100000",
+        open:"Open now - 11noon-9:30pm"
+    },
+    {
+        imageUrl:"./images/batchs.jpg",
+        title:"The Wonderard",
+        description:"Sector 22C, Chandigarh (Grocery)",
+        delivery:"Delivery by May, 15 Feb",
+        price:"1200000",
+        open:"Open now - 11noon-9:30pm"
+    },
+    {
+        imageUrl:"./images/batchs.jpg",
+        title:"Fashion Bazar",
+        description:"Sector 22C, Chandigarh (Electronics)",
+        delivery:"Delivery by Tue, 16 Feb",
+        price:"800000",
+        open:"Open now - 11noon-9:30pm"
+    },
+  ]
+  const [data,setData]=useState([{}])
   const API = "https://api.pujakaitem.com/api/products/thapaserialnoa";
-
   const getImage=async()=>{
     try{
         const res=await fetch(API)
@@ -54,31 +78,20 @@ const Dis = () => {
     {/* 2nd column of store available */}
     <div className='product'>
     <div className="store">Nearest Stores</div>
-      <ImageDescription
-        imageUrl="./images/batchs.jpg"
-        title="The Target"
-        description="Sector 22C, Chandigarh (Electronics)"
-        delivery="Delivery by Sun, 12 Feb"
-        price="1100000"
-        open="Open now - 11noon-9:30pm"
+    {
+      productData.map((product)=>{
+        return <ImageDescription
+        key={product}
+        imageUrl={product.imageUrl}
+        title={product.title}
+        description={product.description}
+        delivery={product.delivery}
+        price={product.price}
+        open={product.open}
       />
-      <ImageDescription
-        imageUrl="./images/batchs.jpg"
-        title="The Target"
-        description="Sector 22C, Chandigarh (Electronics)"
-        delivery="Delivery by Sun, 12 Feb"
-        price="1200000"
-        open="Open now - 11noon-9:30pm"
-      />
-      <ImageDescription
-        imageUrl="./images/batchs.jpg"
-        title="The Target"
-        description="Sector 22C, Chandigarh (Electronics)"
-        delivery="Delivery by Sun, 12 Feb"
-        price="1000000"
-        open="Opened- 12noon-9:30pm"
+      })
+    }
 
-      />
     </div>
     </Wrapper>
   );
@@ -88,6 +101,7 @@ const Wrapper=styled.div`
     display: flex;
     gap:3rem;
     margin-top:2rem;
+    overflow-y: scroll;
 
 @media(max-width:600px){
     flex-direction: column;
@@ -96,7 +110,7 @@ const Wrapper=styled.div`
         width: 90vw;
     }
     .button{
-        width: 80vw !important;
+        width: 90vw !important;
     }
 }
 .store{

@@ -44,7 +44,7 @@ const ImageDescription = ({ imageUrl,title, description,delivery,open, price }) 
 export default ImageDescription;
 const Wrapper=styled.div`
 border: 2px solid grey;
-margin:10px 0;
+margin:1rem 0;
 
  @media (max-width:600px) {
     width: 90vw;
@@ -56,12 +56,20 @@ const Container = styled.div`
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 const Image = styled.img`
-  width: 40%;
+  width: 35%;
   height: 7rem;
   border-radius: 8px;
   margin-bottom: 10px;
+  &:hover{
+    scale: 1.1;
+  }
+  @media(max-width:600px){
+    width: 30%;
+    height: 8rem;
+  }
 `;
 const Description = styled.div`
   font-size: 16px;
@@ -79,11 +87,18 @@ const Description = styled.div`
   .open{
     color:green;
   }
+   @media(max-width:600px){
+   font-size: 14px;
+   margin: 0 10px;
+   .open{
+    font-size: 12px;
+  }
+  }
 `;
 const Price = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+gap:2rem;
 align-items: center;
   .price{
     color: #000306;
@@ -108,5 +123,8 @@ align-items: center;
     border: none;
     font-size: 1rem;
     cursor: pointer;
+  }
+    @media(max-width:600px){
+   font-size: 14px;
   }
 `;
